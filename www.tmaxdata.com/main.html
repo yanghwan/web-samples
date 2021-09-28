@@ -1,0 +1,1421 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<!-- Mirrored from www.tmaxdata.com/main.do by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 12:49:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="msvalidate.01" content="5859FF70DF5585074A49479DA5E64C84" />
+	<meta name="naver-site-verification" content="48d80f836a31013f9d4cef2997be25b21d5df73c" />
+	<title>티맥스데이터 -TmaxData</title>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="stylesheet" href="https://www.tmaxdata.com/lib/css/default.css">
+	<link rel="stylesheet" href="https://www.tmaxdata.com/lib/css/nav.css?ver=20170626">
+	<link rel="stylesheet" href="https://www.tmaxdata.com/lib/css/page01.css">
+	<link rel="stylesheet" href="https://www.tmaxdata.com/lib/css/page02.css?ver=20190103">
+	<link rel="stylesheet" href="https://www.tmaxdata.com/lib/css/page03.css">
+	<link rel="stylesheet" href="https://www.tmaxdata.com/lib/css/page04.css?ver=20170608">
+	<link rel="stylesheet" href="https://www.tmaxdata.com/lib/css/popup.css?ver=20191025">
+	<link rel="stylesheet" href="https://www.tmaxdata.com/lib/css/table.css">
+    <link rel="shortcut icon" href="https://www.tmaxdata.com/img/tibero.ico">	
+	<meta name="msapplication-tap-highlight" content="no">
+	<script src="https://www.tmaxdata.com/lib/js/modernizr.custom.2.5.3.js"></script>
+	<script src="https://www.tmaxdata.com/lib/js/jquery1.9.1.min.js"></script>
+	<script src="https://www.tmaxdata.com/lib/js/hoverIntent.js"></script>
+	<!-- <script src="/lib/js/superfish.js"></script> -->
+	<script src="https://www.tmaxdata.com/lib/js/jquery.bxslider.min.js"></script>
+	<script src="https://www.tmaxdata.com/lib/js/default.js?ver=20170426"></script>
+	<script src="https://www.tmaxdata.com/lib/js/jcarousellite_1.0.1.js"></script>
+	<script src="https://www.tmaxdata.com/lib/js/jquery.accordion.js"></script>
+	<script src="https://www.tmaxdata.com/lib/js/socialScrap.js"></script>
+		<script src="https://www.tmaxdata.com/lib/js/funcLib.js"></script>
+
+	
+	
+
+
+
+
+
+
+
+
+<!-- description meta tag setting -->
+
+
+	
+	
+		
+		
+			
+		
+	
+
+
+<!-- keywords meta tag setting -->
+
+
+	
+	
+		
+		
+			
+		
+	
+
+
+<!-- opengraph title meta tag setting -->
+
+
+	
+	
+		
+		
+			
+		
+	
+
+
+<!-- opengraph description meta tag setting -->
+
+
+	
+	
+		
+		
+			
+		
+	
+
+
+<!-- opengraph image meta tag setting -->
+
+
+	
+	
+		
+		
+			
+		
+	
+
+<meta name='Description' content='국산 DBMS의 자존심, 데이터베이스 관리 시스템 전문기업 티베로' />
+<meta name='Keywords' content='DB, DBMS, databae, enterprise, applications, software, business, big data, storage,  데이타베이스, 데이터베이스, 기업, 빅데이터, 스토리지' />
+<meta name='robots' content='INDEX, FOLLOW' />
+<meta name='country' content='Korea' />
+<meta name='Language' content='ko' />
+<meta name='Updated Date' content='10/01/13 12:00 AM' />
+<meta property='og:title' content='TmaxData' />
+<meta property='og:description' content='국산 DBMS의 자존심, 데이터베이스 관리 시스템 전문기업 티베로' />
+<meta property='og:image' content='https://www.tmaxdata.com/img/nav/og_logo_data.jpg' />
+<meta property='og:type' content='website' />
+	<link rel="stylesheet" href="https://www.tmaxdata.com/lib/css/main.css?ver=20170525">
+	<script>
+		(function($) {
+			$(document).ready(function() {
+				//openPopup();
+				/* Tab menu */
+				//goNoticePop();
+				$('.p-menu div.tab-container').hide();
+				$('.p-menu div.tab-container:first').show();
+				$('.p-menu ul.d1 li:first').addClass('current');
+				$('.p-menu ul.d1 li a').click(function(){ 
+					var $d2 = $('.stab ul.d2 li a img')
+					$('.p-menu ul.d1 li').removeClass('current');
+					$(this).parent().addClass('current'); 
+					var currentTab = $(this).attr('href'); 
+					$('.p-menu div.tab-container').hide();
+					$(currentTab).animate({
+					    width: 'toggle',
+						//height: 'toggle',
+						opacity: 'toggle'
+					}, 1000);
+					$('.p-menu ul.d1 li a').each(function() {
+						$(this).children().attr('src', $(this).children().attr('src').replace('_on', ''));
+					});
+					if(!$(this).children().attr('src').indexOf('gif')){ //gif와 png 분기문 처리 (2017.03.06 최아영) 
+						$(this).children().attr('src', $(this).children().attr('src').replace('.gif', '') + '_on.gif');
+					}else{
+						$(this).children().attr('src', $(this).children().attr('src').replace('.png', '') + '_on.png');
+					}
+					
+					return false;
+				});		
+	
+				$('.bxslider').bxSlider({
+					auto: true,
+					autoControls: true,
+					controls: false,
+					autoHover: true,
+					speed: 800,
+					pause: 8000
+				});				
+				$('.news-database, .news-infinidata, .news-prosync').bxSlider({
+					infiniteLoop: false,
+					auto: false,
+					autoControls: false,
+					controls: false
+				});
+				// 2013-10-08 추가된부분
+				$('.first-slide').click();
+				// 2013-10-08 추가된부분
+				
+				$("#navM .m-mega-section h2").hover(
+					function(){
+						$("ul", $(this).parents(".mega-wrap-m")).show();
+						$(".tm2").css("height", "200px");
+						$(".tm3").css("height", "200px");
+						
+					},
+					function(){
+						$("ul", $(this).parents(".mega-wrap-m")).hide();
+						$(".tm2").css("height", "auto");
+						$(".tm3").css("height", "auto");
+					}
+				);
+				
+				$("#navM .m-mega-section ul").hover(
+					function(){
+						$("ul", $(this).parents(".mega-wrap-m")).show();
+						$(".tm2").css("height", "200px");
+						$(".tm3").css("height", "200px");
+					},
+					function(){
+						$("ul", $(this).parents(".mega-wrap-m")).hide();
+						$(".tm2").css("height", "auto");
+						$(".tm3").css("height", "auto");
+					}
+				);
+			});
+		})(jQuery);
+		
+		function goNoticePop() {
+			if( getCookie("popData") != "done") { //공지팝업
+				window.open("https://www.tmaxdata.com/notice_popup.html", "_blank", "scrollbars=yes,resizable=yes,width=760,height=920,left=0,top=10");
+			}
+		}
+	</script>
+	<script>
+		(function($){ 
+			$(document).ready(function(){
+/* 				var gnbOptions = {
+					hoverClass: 'sfHover',
+					pathClass: 'act',
+					pathLevels: 0,
+					cssArrows: false,
+					animation:   { opacity:'show'},
+					animationOut: { opacity: 'show'},
+					speed: 'normal',
+					speedOut: 'fast'
+				}
+				// initialise plugin
+				var GNB = $('#navM').superfish(gnbOptions); */
+			});
+		})(jQuery);
+	</script>
+<script type="text/javascript">
+function openPopup(){
+	if ( getCookie( "popEdu" ) != "done" ) {
+		//window.open ('/jsp/popup/pop_notice.jsp','popEdu','width=745,height=545,scrollbars=yes,resizeable=no');
+		window.open('https://www.tmaxdata.com/notice.html','_blank','scrollbars=yes,resizable=yes,width=1300,height=550,left=0,top=10');
+	}
+}
+
+function getCookie( name ) {
+	var nameOfCookie = name + "=";
+	var x = 0;
+	while ( x <= document.cookie.length ) {
+		var y = (x+nameOfCookie.length);
+		if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+				if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+						endOfCookie = document.cookie.length;
+				return unescape( document.cookie.substring( y, endOfCookie ) );
+		}
+		x = document.cookie.indexOf( " ", x ) + 1;
+		if ( x == 0 )
+		break;
+	}
+	return "";
+}
+
+function download(file_seq, pdsFrontLoginVO)
+{		
+	if(pdsFrontLoginVO == "null" || pdsFrontLoginVO == "")
+	{
+		alert("로그인후 이용가능 합니다.");
+		return;
+	}
+	else
+	{
+		window.open("http://www.tmaxdata.com"+"/pdsDownload.do?board_file_seq="+file_seq, '다운로드','width=650, height=700, toolbar=no, menubar=no, scrollbars=yes, resizable=yes');
+	}
+}
+function go_mainProduct(prod_cd)	{
+	$("#dpf_prod_cd").val(prod_cd);
+	var thisForm = document.dataProductForm;
+	thisForm.action = "http://www.tmaxdata.com"+"/product/productView.do";
+	thisForm.submit();	
+}
+</script>
+
+
+</head>
+
+<body id="main">
+	<div id="header">	
+		<div class="sns-wrap">
+
+
+
+
+
+<!-- Google Tag Manager 2020.11.13 서승범 -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KV6KPMW');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Facebook Pixel Code 2020.11.13 서승범-->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '764525820763358');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=764525820763358&amp;ev=PageView&amp;noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!--Google 트래킹 코드 - 2017.02.23 최아영 -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91838757-4', 'auto');
+  ga('require', 'displayfeatures');
+  ga('require', 'linkid', 'https://www.tmaxdata.com/linkid.js');
+  
+  ga('send', 'pageview');
+  
+
+</script>
+<!-- Google 트래킹 코드 //-->	
+
+<!-- Facebook Pixel Code -->
+<script>
+/* !function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '275321036228460'); 
+fbq('track', 'PageView'); */
+</script>
+<noscript>
+<!-- <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=275321036228460&ev=PageView
+&noscript=1"/> -->
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+<script type="text/javascript">
+(function($) {
+ 	$(document).ready(function() {
+		$('#facebook a img').hover( 
+			function() {
+				$(this).attr('src', $(this).attr('src').replace('.png', 'https://www.tmaxdata.com/(over).png'));
+			},
+			function() {
+
+				$(this).attr('src', $(this).attr('src').replace('(over)', '')); 
+				
+			} );
+ 	
+ 		$('#naverpost a img').hover( 
+			function() {
+				$(this).attr('src', $(this).attr('src').replace('.png', 'https://www.tmaxdata.com/(over).png'));
+			},
+			function() {				$(this).attr('src', $(this).attr('src').replace('(over)', '')); 
+			} );
+		
+		$('#youtube a img').hover( 
+			function() {
+				$(this).attr('src', $(this).attr('src').replace('.png', 'https://www.tmaxdata.com/(over).png'));
+			},
+			function() {
+				$(this).attr('src', $(this).attr('src').replace('(over)', '')); 
+			} );
+	});
+})(jQuery);
+
+function openPop() {
+
+	var xLen = 450;
+    var yLen = 400;
+
+    var xPos = (screen.width - xLen) / 2;
+    var yPos = (screen.height - yLen) / 2;
+    
+    window.open("https://www.tmaxdata.com:443"+"/member/login.do", "login", position='left='+xPos+',top='+yPos+',width='+xLen+',height='+yLen+',toolbar=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=1,fullscreen=0');
+}
+
+<!--
+ function registerInfo(strMode, join_gubun) {
+    var xLen = 715;
+    var yLen = 800;
+
+    var xPos = (screen.width - xLen) / 2;
+    var yPos = (screen.height - yLen) / 2;
+    
+    window.open("https://www.tmaxdata.com:443"+"/member/memberRegister.do?strMode=" + strMode + "&join_gubun="+join_gubun, "join",position='left='+xPos+',top='+yPos+',width='+xLen+',height='+yLen+',toolbar=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=1,fullscreen=0');
+} 
+//-->
+	function go_searchTop()	{
+		
+		var thisForm = document.searchForm;
+		
+		var searchStrTop = $("#searchStrTop").val();
+		if(searchStrTop.length <= 1 || searchStrTop == '티맥스소프트 ')
+		{
+			alert('검색어를 최소 2글자 이상 입력해 주시기 바랍니다.');
+			$("#searchStrTop").val('');
+			$("#searchStrTop").focus();
+			return false;
+		}
+		
+		$("#searchStr").val(searchStrTop);
+		
+		thisForm.method="post";
+		thisForm.action="http://www.tmaxdata.com"+"/etc/searchResult.do";
+		thisForm.submit();
+		
+	}
+	
+</script>
+			<div id="sns">
+				<!--<p><a href="/jsp/popup/lay_sns.jsp" class="lay-html">소설로그인</a></p>-->
+				<ul>
+					    <li><strong>제품구입문의 : <a href="tel:031-8018-1111">031-8018-1111 </a><span> ／ </span></strong></li>
+						<li><strong>&nbsp; 기술서비스센터 : <a href="tel:1544-8629">1544-8629 </a><span> ／ </span></strong></li>
+						<li><strong>&nbsp; 대표번호 : <a href="tel:031-8018-1700"> 031-8018-1700 </a></strong></li>
+				</ul>
+				
+				<ul>
+				
+					<li>&nbsp; &nbsp; &nbsp;<a href="javascript:openPop();"><img src="https://www.tmaxdata.com/img/share/util_login.gif" alt="로그인"></a><li>
+					<li><a href="javascript:void(0);" onClick="registerInfo('INSERT', 'web'); return false;"><img src="https://www.tmaxdata.com/img/share/util_join.gif" alt="회원가입"></a><li>
+					
+					<li class="sitemap"><a href="http://www.tmaxdata.com/etc/sitemap.do"><img src="https://www.tmaxdata.com/img/share/util_sitemap.gif" alt="사이트맵"></a></li>
+ 					<li style="margin-right: 5px;">
+						<!-- <div class="top-search">
+							<input type="text" name="searchStrTop" id="searchStrTop" placeholder=""><a href="javascript:void(0);" onClick="go_searchTop(); return false;"><img src="/img/share/top_search.gif" alt=""></a>
+						</div> -->
+					</li>
+					<li>
+						<div id="magazine">
+							<h3><a href="#rel2">Family Network</a></h3>
+							<ul id="rel" style="opacity: 0.8; display: none;">
+							<li><a href="../www.tmax.co.kr/index.html" target="_blank">TmaxGroup</a></li> 
+								<li><a href="https://wapl.ai/?force=true&amp;utm_source=brandsite&amp;utm_medium=affiliate&amp;utm_campaign=wapl&amp;utm_content=21y3m_brandsite&amp;utm_term=brandsite_tmaxsoft" target="_blank" ">TmaxWAPL</a></li>
+								<li><a href="http://kr.tmaxsoft.com/main.do?tmaxsso=yes" target="_blank">TmaxSoft</a></li>
+								<li><a href="../www.tmaxtibero.com/main.html" target="_blank">TmaxTibero</a></li>
+								<li><a href="../tmaxanc.com/index.html" target="_blank">TmaxA&C</a></li>
+                                <li><a href="http://technet.tmaxsoft.com/ko/front/main/main.do?tmaxsso=yes" target="_blank">Technet</a></li> 
+                                <li><a href="../www.tmaxsoft.com/index.html" target="_blank">Global</a></li> 
+                                <!-- <li><a href="http://us.tmaxsoft.com/main.do" target="_blank">United States</a></li>
+                                <li><a href="http://cn.tmaxsoft.com" target="_blank">China</a></li>
+                                <li><a href="http://jp.tmaxsoft.com" target="_blank">Japan</a></li>
+                                <li><a href="http://ru.tmaxsoft.com/main.do" target="_blank">Russia</a></li>
+                                <li><a href="http://br.tmaxsoft.com/main.do" target="_blank">Brasil</a></li> -->
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<div id="sns-link">
+				<ul>
+					    <li id="facebook">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					    	<a href="https://www.facebook.com/TmaxHQ/" target="_blank" ><img src="https://www.tmaxdata.com/img/etc/button_link_facebook.png" alt="Facebook"></a></li>
+						<li id="naverpost">&nbsp;<a href="../post.naver.com/tmaxhq.html" target="_blank"><img src="https://www.tmaxdata.com/img/etc/button_link_naverpost.png" alt="NaverPost"></a></li>
+						<li id="youtube">&nbsp;<a href="../www.youtube.com/channel/UCSL_WpbQKwxFZpdMSqRaRTg.html" target="_blank"><img src="https://www.tmaxdata.com/img/etc/button_link_youtube.png" alt="Youtube"></a></li>
+						<li id="naverblog">&nbsp;<a href="../blog.naver.com/wapl_ai.html" target="_blank"><img src="https://www.tmaxdata.com/img/etc/button_link_naverblog.jpg" alt="NaverBlogWAPL"></a></li>
+				</ul>
+				</div>
+			</div>
+<form name="searchForm" id="searchForm" method="post">
+<input type="hidden" name="searchStr" id="searchStr" value="" />
+</form>			
+		</div>
+		<header class="header">
+			<div class="wrapper-m">
+				<div class="wrap-m">
+					<div class="top-logo"><a href="main.html"><img src="https://www.tmaxdata.com/img/nav/logo.gif" alt="TmaxSoft" title="datahp-01"></a></div>
+					<ul class="m-gnb" id="navM">
+						<li>
+							<a href="http://www.tmaxdata.com/product/productMain.do"><img src="https://www.tmaxdata.com/img/nav/tm1.gif" class="roll" alt="제품"></a>
+							<div class="m-mega tm1">
+								<div class="mega-wrap-m">
+									<div itemscope itemtype="http://schema.org/product" class="m-mega-section" style="padding-left: 78px;">
+										<span style="display:none;" itemprop="name">Tibero</span>
+										<h2><a href="javascript:void(0);" onClick="go_mainProduct('tibero'); return false;"><img itemprop="image" src="https://www.tmaxdata.com/img/nav/tm1_sm1.png" class="roll" alt="Tibero"></a></h2>
+									</div>
+									<div itemscope itemtype="http://schema.org/product" class="m-mega-section">
+										<span style="display:none;" itemprop="name">ZetaData</span>
+										<h2><a href="javascript:void(0);" onClick="go_mainProduct('zetadata'); return false;"><img itemprop="image" src="https://www.tmaxdata.com/img/nav/tm1_sm4.png" class="roll" alt="ZetaData"></a></h2>
+									</div>
+									<!-- <div itemscope itemtype="http://schema.org/product" class="m-mega-section">
+										<span style="display:none;" itemprop="name">AnyMiner</span>
+										<h2><a href="javascript:void(0);" onClick="go_mainProduct('anyminer'); return false;"><img itemprop="image" src="/img/nav/tm1_sm5.png" class="roll" alt="AnyMiner"></a></h2>
+									</div> -->
+									<div itemscope itemtype="http://schema.org/product" class="m-mega-section">
+										<span style="display:none;" itemprop="name">VirtualDB</span>
+										<h2><a href="javascript:void(0);" onClick="go_mainProduct('datahub'); return false;"><img itemprop="image" src="https://www.tmaxdata.com/img/nav/tm1_sm6.png" class="roll" alt="VirtualDB"></a></h2>
+									</div>
+<!-- 									<div class="m-mega-section"> -->
+<!-- 										<h2><a href="javascript:void(0);" onClick="go_mainProduct('infinidata'); return false;"><img src="/img/nav/tm1_sm2.gif" class="roll" alt="InfiniData"></a></h2> -->
+<!-- 									</div> -->
+									<div itemscope itemtype="http://schema.org/product" class="m-mega-section">
+										<span style="display:none;" itemprop="name">ProSync</span>
+										<h2><a href="javascript:void(0);" onClick="go_mainProduct('prosync'); return false;"><img itemprop="image" src="https://www.tmaxdata.com/img/nav/tm1_sm3.png" class="roll" alt="ProSync"></a></h2>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="http://www.tmaxdata.com/service/serviceMain.do"><img src="https://www.tmaxdata.com/img/nav/tm2.gif" class="roll" alt="고객서비스"></a>
+							<div class="m-mega tm2">
+								<div class="mega-wrap-m">
+									<div class="m-mega-section">
+										<h2><a href="http://www.tmaxdata.com/service/noticeList.do"><img src="https://www.tmaxdata.com/img/nav/tm2_sm1.gif" class="roll" alt="공지사항"></a></h2>
+										<ul>
+											<li><a href="http://www.tmaxdata.com/service/noticeList.do"><img src="https://www.tmaxdata.com/img/nav/tm2_sm1_1.gif" class="roll" alt="공지사항"></a></li>
+										</ul>
+									</div>
+									<div class="m-mega-section">
+										<h2><a href="http://www.tmaxdata.com/bbs.do?cms_cd=SER_10"><img src="https://www.tmaxdata.com/img/nav/tm2_sm2.gif" class="roll" alt="고객문의"></a></h2>
+										<ul>
+											<li><a href="http://www.tmaxdata.com/bbs.do?cms_cd=SER_10"><img src="https://www.tmaxdata.com/img/nav/tm2_sm2_1.gif" class="roll" alt="기술서비스센터"></a></li>
+											<li><a href="https://www.tmaxdata.com:443/service/inquiryWrite.do"><img src="https://www.tmaxdata.com/img/nav/tm2_sm2_2.gif" class="roll" alt="문의등록"></a></li>
+										</ul>
+									</div>
+									
+									<div class="m-mega-section">
+										<h2><a href="http://www.tmaxdata.com/bbs.do?cms_cd=SER_30"><img src="https://www.tmaxdata.com/img/nav/tm2_sm4.gif" class="roll" alt="기술서비스"></a></h2>
+										<ul>
+											<li><a href="http://www.tmaxdata.com/bbs.do?cms_cd=SER_30"><img src="https://www.tmaxdata.com/img/nav/tm2_sm4_1.gif" class="roll" alt="기술서비스"></a></li>
+											
+										</ul>
+									</div>
+									<div class="m-mega-section">
+										<h2><a href="http://www.tmaxdata.com/bbs.do?cms_cd=SER_40"><img src="https://www.tmaxdata.com/img/nav/tm2_sm5.gif" class="roll" alt="교육서비스"></a></h2>
+										<ul>
+											<li><a href="http://www.tmaxdata.com/bbs.do?cms_cd=SER_40"><img src="https://www.tmaxdata.com/img/nav/tm2_sm5_1.gif" class="roll" alt="교육센터 소개"></a></li>
+											<li><a href="https://www.tmaxdata.com:443/service/educationList.do"><img src="https://www.tmaxdata.com/img/nav/tm2_sm5_2.gif" class="roll" alt="교육과정 및 신청"></a></li>
+											<li><a href="http://www.tmaxdata.com/service/serviceFaq.do"><img src="https://www.tmaxdata.com/img/nav/tm2_sm5_3.gif" class="roll" alt="FAQ"></a></li>
+										</ul>	
+									</div>
+									<div class="m-mega-section">
+										<h2><a href="http://www.tmaxdata.com/bbs.do?cms_cd=SER_50"><img src="https://www.tmaxdata.com/img/nav/tm2_sm6.gif" class="roll" alt="테크넷서비스"></a></h2>
+										<ul>
+											<li><a href="http://www.tmaxdata.com/bbs.do?cms_cd=SER_50"><img src="https://www.tmaxdata.com/img/nav/tm2_sm6_1.gif" class="roll" alt="테크넷서비스"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="http://www.tmaxdata.com/company/companyMain.do"><img src="https://www.tmaxdata.com/img/nav/tm3.gif" class="roll" alt="회사소개"></a>
+							<div class="m-mega tm3">
+								<div class="mega-wrap-m">
+									<div class="m-mega-section">
+										<h2><a href="http://www.tmaxdata.com/bbs.do?cms_cd=COM_00"><img src="https://www.tmaxdata.com/img/nav/tm3_sm1.gif" class="roll" alt="회사개요"></a></h2>
+										<ul>
+											<li><a href="http://www.tmaxdata.com/bbs.do?cms_cd=COM_00"><img src="https://www.tmaxdata.com/img/nav/tm3_sm1_1.gif" class="roll" alt="CEO Message"></a></li>
+											<li><a href="http://www.tmaxdata.com/bbs.do?cms_cd=COM_02"><img src="https://www.tmaxdata.com/img/nav/tm3_sm1_2.gif" class="roll" alt="일반현황"></a></li>
+											<li><a href="http://www.tmaxdata.com/bbs.do?cms_cd=COM_011"><img src="https://www.tmaxdata.com/img/nav/tm3_sm1_3.gif" class="roll" alt="연혁"></a></li>
+											<li><a href="http://www.tmaxdata.com/bbs.do?cms_cd=COM_03"><img src="https://www.tmaxdata.com/img/nav/tm3_sm1_4.gif" class="roll" alt="CI"></a></li>
+										</ul>	
+									</div>
+									<div class="m-mega-section">
+										<h2>
+											<a href="http://www.tmaxdata.com/company/ethicalManagement.do"><img
+												src="https://www.tmaxdata.com/img/nav/tm3_sm1_5.gif" class="roll" alt="윤리경영"></a>
+										</h2>
+										
+									</div>
+									<div class="m-mega-section">
+										<h2><a href="http://www.tmaxdata.com/bbs.do?cms_cd=COM_10"><img src="https://www.tmaxdata.com/img/nav/tm3_sm2.gif" class="roll" alt="R&D센터"></a></h2>
+										<ul>
+											<li><a href="http://www.tmaxdata.com/bbs.do?cms_cd=COM_10"><img src="https://www.tmaxdata.com/img/nav/tm3_sm2_1.gif" class="roll" alt="R&D센터 소개"></a></li>
+											
+										</ul>				
+									</div>
+									<div class="m-mega-section">
+										<h2><a href="http://www.tmaxdata.com/company/successList.do"><img src="https://www.tmaxdata.com/img/nav/tm3_sm3.gif" class="roll" alt="사업무문 및 성공사례"></a></h2>
+										<ul class="float">
+											<li><a href="http://www.tmaxdata.com/company/successList.do"><img src="https://www.tmaxdata.com/img/nav/tm3_sm3_1.gif" class="roll" alt="공공"></a></li>
+											<li><a href="http://www.tmaxdata.com/company/successList.do?gubun=40"><img src="https://www.tmaxdata.com/img/nav/tm3_sm3_4.gif" class="roll" alt="유통/서비스"></a></li>
+											<li><a href="http://www.tmaxdata.com/company/successList.do?gubun=30"><img src="https://www.tmaxdata.com/img/nav/tm3_sm3_2.gif" class="roll" alt="금융"></a></li>
+											<li><a href="http://www.tmaxdata.com/company/successList.do?gubun=50"><img src="https://www.tmaxdata.com/img/nav/tm3_sm3_5.gif" class="roll" alt="통신/미디어"></a></li>
+											<li><a href="http://www.tmaxdata.com/company/successList.do?gubun=20"><img src="https://www.tmaxdata.com/img/nav/tm3_sm3_3.gif" class="roll" alt="제조"></a></li>
+										</ul>	
+									</div>
+									<div class="m-mega-section">
+										<h2><a href="http://www.tmaxdata.com/bbs.do?cms_cd=COM_30"><img src="https://www.tmaxdata.com/img/nav/tm3_sm4.gif" class="roll" alt="밸류파트너 프로그램"></a></h2>
+										<ul>
+											<li><a href="http://www.tmaxdata.com/bbs.do?cms_cd=COM_30"><img src="https://www.tmaxdata.com/img/nav/tm3_sm4_1.gif" class="roll" alt="밸류파트너 프로그램 소개"></a></li>
+											
+										</ul>
+									</div>
+									<div class="m-mega-section">
+										<h2><a href="http://www.tmaxdata.com/bbs.do?cms_cd=COM_40"><img src="https://www.tmaxdata.com/img/nav/tm3_sm5.gif" class="roll" alt="중부지사"></a></h2>
+										<ul>
+											<li><a href="http://www.tmaxdata.com/bbs.do?cms_cd=COM_40"><img src="https://www.tmaxdata.com/img/nav/tm3_sm5_1.gif" class="roll" alt="중부지사"></a></li>
+										</ul>
+									</div>
+									<div class="m-mega-section">
+										<h2><a href="http://www.tmaxdata.com/bbs.do?cms_cd=COM_50"><img src="https://www.tmaxdata.com/img/nav/tm3_sm6.gif" class="roll" alt="오시는 길"></a></h2>
+										<ul>
+											<li><a href="http://www.tmaxdata.com/bbs.do?cms_cd=COM_50"><img src="https://www.tmaxdata.com/img/nav/tm3_sm6_1.gif" class="roll" alt="오시는 길"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="http://www.tmaxdata.com/overseas/overseasMain.do"><img src="https://www.tmaxdata.com/img/nav/tm4.gif" class="roll" alt="해외사업"></a>
+							<div class="m-mega tm4">
+								<div class="mega-wrap-m">
+									
+									<div class="m-mega-section">
+										<h2><a href="http://www.tmaxdata.com/bbs.do?cms_cd=OVER_10"><img src="https://www.tmaxdata.com/img/nav/tm4_sm2.gif" class="roll" alt="해외사업 소개"></a></h2>
+									</div>
+									<div class="m-mega-section">
+										<h2><a href="http://www.tmaxdata.com/bbs.do?cms_cd=OVER_20"><img src="https://www.tmaxdata.com/img/nav/tm4_sm3.gif" class="roll" alt="해외법인"></a></h2>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="http://www.tmaxdata.com/info/infoMain.do"><img src="https://www.tmaxdata.com/img/nav/tm5.gif" class="roll" alt="홍보센터"></a>
+							<div class="m-mega tm5">
+								<div class="mega-wrap-m">
+									<div class="m-mega-section">
+										<h2><a href="http://www.tmaxdata.com/info/pressList.do"><img src="https://www.tmaxdata.com/img/nav/tm5_sm1.gif" class="roll" alt="보도자료"></a></h2>
+									</div>
+									<div class="m-mega-section">
+										<h2><a href="http://www.tmaxdata.com/info/newsList.do"><img src="https://www.tmaxdata.com/img/nav/tm5_sm2.gif" class="roll" alt="관련뉴스"></a></h2>
+									</div>
+									<div class="m-mega-section">
+										<h2><a href="http://www.tmaxdata.com/info/storyTList.do"><img src="https://www.tmaxdata.com/img/nav/tm5_sm3.gif" class="roll" alt="스토리T"></a></h2>
+									</div>
+									<div class="m-mega-section">
+										<h2><a href="https://www.tmaxdata.com:443/info/seminarList.do"><img src="https://www.tmaxdata.com/img/nav/tm5_sm4.gif" class="roll" alt="세미나"></a></h2>
+									</div>
+									<div class="m-mega-section">
+										<h2><a href="http://www.tmaxdata.com/info/newsletterList.do"><img src="https://www.tmaxdata.com/img/nav/tm5_sm5.gif" class="roll" alt="뉴스레터"></a></h2>
+									</div>
+									<!-- <div class="m-mega-section">
+										<h2><a href="/jsp/info/stockLogin.jsp"><img src="/img/nav/tm5_sm6.gif" class="roll" alt="주주게시판"></a></h2>
+									</div> -->
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="https://kr.tmaxsoft.com/recruit/recruitNotice.do" target="_blank"><img src="https://www.tmaxdata.com/img/nav/tm6.gif" class="roll" alt="채용정보"></a>
+							
+						</li>
+						<li>
+						<a href="http://www.tmaxdata.com/service/inquiryWrite_1.do"><img src="https://www.tmaxdata.com/img/nav/tm7.gif" class="roll" alt="문의사항"></a>
+						</li>
+					</ul>
+				</div>		
+			</div>	
+		</header>
+	</div>
+	<div style="height:87px;"></div>
+	<div id="slider" style="margin-top: 14px;">
+		<!-- <div style="position: absolute; top: 87px; width: 100%; height: 48px;z-index: 1000; "></div> -->
+		<div class="slider">
+			<ul class="bxslider">
+		
+				<li><img src="https://www.tmaxdata.com/upload/imgs/main/20210825112524_592.png" alt="클라우드 웨비나 진행" usemap="#slide1"></li>
+		
+				<li><img src="https://www.tmaxdata.com/upload/imgs/main/20210415084449_393.png" alt="대한민국을 쿼리합니다" usemap="#slide2"></li>
+		
+				<li><img src="https://www.tmaxdata.com/upload/imgs/main/20200526164437_844.png" alt="티맥스, 온라인 개학 ‘KERIS e-학습터’ 성공 지원 “클라우드환경에서 국산 상용 DBMS, WAS 경쟁력 입증" usemap="#slide3"></li>
+		
+				<li><img src="https://www.tmaxdata.com/upload/imgs/main/20200518113601_539.png" alt="광주 인공지능" usemap="#slide4"></li>
+		
+				<li><img src="https://www.tmaxdata.com/upload/imgs/main/20200518131003_785.png" alt="현대기아차" usemap="#slide5"></li>
+
+			</ul>
+			
+			<map name="slide1">
+				<area shape="rect" coords="200,400,50,250" href="https://post.naver.com/viewer/postView.naver?volumeNo=32222117&amp;memberNo=33037825" target="_blank">
+				<area shape="rect" coords="null" href="https://www.tmaxdata.com/null" target="_blank">
+			</map>
+			
+			
+			<map name="slide2">
+				<area shape="rect" coords="null" href="https://www.tmaxdata.com/null" target="_blank">
+				<area shape="rect" coords="null" href="https://www.tmaxdata.com/null" target="_blank">
+			</map>
+			
+			
+			<map name="slide3">
+				<area shape="rect" coords="200,400,50,250" href="https://www.tmaxdata.com/info/pressView.do?page=1&amp;list_cnt=6&amp;seq=90&amp;rnum=+1&amp;board_cd=press&amp;search=title&amp;searchTxt=" target="_blank">
+				<area shape="rect" coords="null" href="https://www.tmaxdata.com/null" target="_blank">
+			</map>
+			
+			
+			<map name="slide4">
+				<area shape="rect" coords="200,400,50,250" href="https://www.tmaxdata.com/info/storyTView.do?page=1&amp;category=Highlight&amp;list_cnt=5&amp;seq=179&amp;rnum=+1&amp;board_cd=storyT&amp;search=title&amp;searchTxt=" target="_blank">
+				<area shape="rect" coords="null" href="https://www.tmaxdata.com/null" target="_blank">
+			</map>
+			
+			
+			<map name="slide5">
+				<area shape="rect" coords="200,400,50,250" href="https://www.tmaxdata.com/info/storyTView.do?page=1&amp;category=Highlight&amp;list_cnt=5&amp;seq=158&amp;rnum=+6&amp;board_cd=storyT&amp;search=title&amp;searchTxt=" target="_blank">
+				<area shape="rect" coords="null" href="https://www.tmaxdata.com/null" target="_blank">
+			</map>
+			
+			
+			<!-- <ul class="bxslider">
+				<li><img src="/img/main/slide_5.png" alt="" usemap="#slide5"></li>
+				<li><img src="/img/main/slide_1.png" alt="" usemap="#slide1"></li>
+				<li><img src="/img/main/slide_2.png" alt="" usemap="#slide2"></li>
+				<li><img src="/img/main/slide_3.png" alt="" usemap="#slide3"></li>
+				<li><img src="/img/main/slide_4.png" alt="" usemap="#slide4"></li>
+			</ul> -->
+			<!-- <map name="slide1">
+				<area shape="rect" coords="1,286,136,333" href="/product/productView.do?prod_cd=tibero">
+			</map>
+			<map name="slide2">
+				<area shape="rect" coords="1,296,137,343" href="/product/productView.do?prod_cd=infinidata">
+			</map>
+			<map name="slide3">
+				<area shape="rect" coords="1,286,136,333" href="/info/pressView.do?seq=6">
+			</map>
+			<map name="slide4">
+				<area shape="rect" coords="1,311,136,358" href="/info/pressView.do?seq=5">
+			</map>
+			<map name="slide5">
+				<area shape="rect" coords="2,280,81,306" href="/info/seminarView.do?seminar_id=20130810-6" />
+			</map> -->
+		</div>
+	</div>
+	<div id="pList">
+		<div class="p-menu" style="width: 980px; margin: 0 auto; position: relative; height: 203px;">
+			<ul class="d1">
+				<!-- <li><a href="#tab1"><img src="/img/main/database_on.gif" alt=""></a></li> -->
+				<!-- 2013-10-08 class추가 -->
+				<li><a href="#tab1" class="first-slide"><img src="https://www.tmaxdata.com/img/main/database_on.png" alt=""></a></li>
+				<!-- //2013-10-08 class추가 -->
+<!-- 				<li><a href="#tab2"><img src="/img/main/infinidata.gif" alt=""></a></li> -->
+				<li><a href="#tab3"><img src="https://www.tmaxdata.com/img/main/prosync.png" alt=""></a></li>
+			</ul>
+			<div id="tab1" class="tab-container">
+				<div class="p-logo"><img src="https://www.tmaxdata.com/img/main/database_logo.png" alt=""></div>
+				<div class="p-desc"><img src="https://www.tmaxdata.com/img/main/database_desc.gif" alt="" usemap="#map_database"></div>
+				<div class="p-news">
+					<img src="https://www.tmaxdata.com/img/main/product_issues.png" alt="">
+					<ul class="news-slider news-database">
+					
+						<li>
+							
+								<a href="http://www.tmaxdata.com/service/noticeView.do?seq=34">
+								
+							<p><strong>2021년 EOL/EOS 캘린더</strong>
+							2021년 EOL/EOS 캘린더
+							</p>
+							</a>
+						</li>
+					
+						<li>
+							
+								<a href="http://www.tmaxdata.com/info/pressView.do?seq=99">
+							
+								
+							<p><strong>티맥스데이터, 클라우드 환경에서도 국산 DBMS 확산  “클라우드 최적화 통해 디지털 뉴딜 지원한다”</strong>
+							티맥스데이터가 외산과 오픈소스 중심의 클라우드 DBMS 시장에서 국산 제품 확산의 선봉에 선다.
+							</p>
+							</a>
+						</li>
+					
+						<li>
+							
+								<a href="http://www.tmaxdata.com/info/pressView.do?seq=97">
+							
+								
+							<p><strong>티맥스데이터 티베로, 클라우드 기반  차세대 병원정보시스템 도입사례 이어져</strong>
+							티맥스데이터가 ‘티베로(Tibero)’를 통해 퍼블릭 클라우드 기반의 차세대 병원정보시스템을 구축해...
+							</p>
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div><!-- End of id="tab1" //-->
+			<div id="tab4" class="tab-container">
+				<div class="p-logo"><img src="https://www.tmaxdata.com/img/main/zetadata_logo.png" alt=""></div>
+				<div class="p-desc"><img src="https://www.tmaxdata.com/img/main/zetadatat_desc.gif" alt="" usemap="#map_zetadatat"></div>
+				<div class="p-news">
+					<img src="https://www.tmaxdata.com/img/main/product_issues.png" alt="">
+					<ul class="news-slider news-infinidata">
+					
+						<li>
+							
+								<a href="http://www.etnews.com/news/computing/informatization/2884735_1475.html" target="_blank">
+								
+							<p><strong>현대·기아차, 국산 DB `티베로` 첫 선택...`탈오라클` 바람 주도</strong>
+							현대·기아차는 국산 DB `티베로`와 ULA(Unlimited Licensing Agreement)...
+							</p>
+							</a>
+						</li>
+					
+						<li>
+							
+								<a href="http://joongang.joins.com/article/aid/2013/11/29/12855509.html?cloc=olink|article|default" target="_blank">
+								
+							<p><strong>[비즈 칼럼] 시스템 SW산업 키워야 하는 이유</strong>
+							최근 국산 시스템 소프트웨어가 금융·공공·대기업 등의 핵심업무에 도입되면서 외산 대항마로 성장하고 ...
+							</p>
+							</a>
+						</li>
+					
+						<li>
+							
+								<a href="http://news.inews24.com/php/news_view.php?g_serial=784695&amp;g_menu=020200&amp;rrf=nv" target="_blank">
+								
+							<p><strong>빅데이터 시장서 국산 솔루션 대약진</strong>
+							해외 IT기업들이 주도하고 있는 빅데이터 솔루션 시장에서 국내 기업들이 선전하고 있어 주목된다. K...
+							</p>
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div><!-- End of id="tab4" //-->
+			
+			<div id="tab2" class="tab-container">
+				<div class="p-logo"><img src="https://www.tmaxdata.com/img/main/infinidata_logo.png" alt=""></div>
+				<div class="p-desc"><img src="https://www.tmaxdata.com/img/main/infinidata_desc.gif" alt="" usemap="#map_infinidata"></div>
+				<div class="p-news">
+					<img src="https://www.tmaxdata.com/img/main/product_issues.png" alt="">
+					<ul class="news-slider news-infinidata">
+					
+						<li>
+							
+								<a href="http://www.etnews.com/news/computing/informatization/2884735_1475.html" target="_blank">
+								
+							<p><strong>현대·기아차, 국산 DB `티베로` 첫 선택...`탈오라클` 바람 주도</strong>
+							현대·기아차는 국산 DB `티베로`와 ULA(Unlimited Licensing Agreement)...
+							</p>
+							</a>
+						</li>
+					
+						<li>
+							
+								<a href="http://joongang.joins.com/article/aid/2013/11/29/12855509.html?cloc=olink|article|default" target="_blank">
+								
+							<p><strong>[비즈 칼럼] 시스템 SW산업 키워야 하는 이유</strong>
+							최근 국산 시스템 소프트웨어가 금융·공공·대기업 등의 핵심업무에 도입되면서 외산 대항마로 성장하고 ...
+							</p>
+							</a>
+						</li>
+					
+						<li>
+							
+								<a href="http://news.inews24.com/php/news_view.php?g_serial=784695&amp;g_menu=020200&amp;rrf=nv" target="_blank">
+								
+							<p><strong>빅데이터 시장서 국산 솔루션 대약진</strong>
+							해외 IT기업들이 주도하고 있는 빅데이터 솔루션 시장에서 국내 기업들이 선전하고 있어 주목된다. K...
+							</p>
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div><!-- End of id="tab2" //-->
+			<div id="tab3" class="tab-container">
+				<div class="p-logo"><img src="https://www.tmaxdata.com/img/main/prosync_logo.png" alt=""></div>
+				<div class="p-desc"><img src="https://www.tmaxdata.com/img/main/prosync_desc.gif" alt="" usemap="#map_prosync"></div>
+				<div class="p-news">
+					<img src="https://www.tmaxdata.com/img/main/product_issues.png" alt="">
+					<ul class="news-slider news-prosync">
+					
+						<li>
+							
+								<a href="http://www.etnews.com/news/computing/informatization/2884735_1475.html" target="_blank">
+								
+							<p><strong>현대·기아차, 국산 DB `티베로` 첫 선택...`탈오라클` 바람 주도</strong>
+							현대·기아차는 국산 DB `티베로`와 ULA(Unlimited Licensing Agreement)...
+							</p>
+							</a>
+						</li>
+					
+						<li>
+							
+								<a href="http://joongang.joins.com/article/aid/2013/11/29/12855509.html?cloc=olink|article|default" target="_blank">
+								
+							<p><strong>[비즈 칼럼] 시스템 SW산업 키워야 하는 이유</strong>
+							최근 국산 시스템 소프트웨어가 금융·공공·대기업 등의 핵심업무에 도입되면서 외산 대항마로 성장하고 ...
+							</p>
+							</a>
+						</li>
+					
+						<li>
+							
+								<a href="http://www.edaily.co.kr/news/NewsRead.edy?SCD=JE41&amp;newsid=01157846602871240&amp;DCD=A00504" target="_blank">
+								
+							<p><strong>[플랫폼전쟁] 플랫폼이 창조경제다</strong>
+							IT의 발달로 하드웨어든 소프트웨어든 개별 품질의 퀄리티보다 어느 ‘플랫폼’을 거머쥐었는지가 성패의...
+							</p>
+							</a>
+						</li>
+						
+
+					</ul>
+				</div>
+			</div><!-- End of id="tab2" //-->
+		</div>
+	</div>
+	<div style="background: url('https://www.tmaxdata.com/img/main/cont_bg.gif') repeat-x center top; text-align: center; position: relative; z-index: 1; margin-top: -8px;">
+		<div style="position: absolute; width: 100%; height: 18px; top: 0; background: url('https://www.tmaxdata.com/img/main/cont_top.png') repeat-x left top;"></div>
+		<div style="position: absolute; width: 100%; height: 27px; bottom: 0; background: url('https://www.tmaxdata.com/img/main/cont_bottom.png') repeat-x left bottom;"></div>
+		<div style="position: absolute; width: 980px; height: 257px; bottom: 0; background: url('https://www.tmaxdata.com/img/main/foot_bg.png') repeat-x left bottom; left: 50%; margin-left: -490px;"></div>
+		<div class="main-list-wrap" style="padding-bottom: 0;">
+			<ul class="main-list"> 
+				<li style="width: 484px;">
+					<!-- 1 -->
+					<div class="list">			
+						<p class="top">
+						
+						<a href="https://www.tmaxdata.com/info/storyTView.do?page=1&amp;category=Tmax%2B&amp;list_cnt=5&amp;seq=189&amp;rnum=+1&amp;board_cd=storyT&amp;search=title&amp;searchTxt=" target="_self">
+							<img width="484" height="200" src="https://www.tmaxdata.com/upload/imgs/main/20200622164659_845.png" alt="“코로나 극복 위한 긴급재난지원금, 국산 SW도 도왔다”  티맥스, 긴급재난지원금 지급 시스템에 DBMS ‘티베로’공급" >
+						</a>
+						</p>
+					</div>
+					<!-- 3 -->
+					<div class="list">
+						<p class="top">
+						
+						<a href="https://www.tmaxdata.com/info/storyTView.do?seq=183" target="_self">
+							<img width="484" height="200" src="https://www.tmaxdata.com/upload/imgs/main/20200612141508_438.png" alt="박상영 소장 인터뷰" >
+						</a>
+						</p>
+					</div>
+				</li>
+				<li style="width: 484px;">
+					<!-- 2 -->
+					<div class="list">
+						<p class="top">						
+							
+						<a href="https://www.tmaxdata.com/info/storyTView.do?page=1&amp;category=Tmax%2B&amp;list_cnt=5&amp;seq=160&amp;rnum=+1&amp;board_cd=storyT&amp;search=title&amp;searchTxt=" target="_self">
+							<img width="484" height="200" src="https://www.tmaxdata.com/upload/imgs/main/20190621094657_900.png" alt="브라질" >
+						</a>
+						</p>						
+					</div>
+					<!-- 4 -->
+					<div class="list">
+						<p class="top">
+						
+						<a href="https://tmaxos.com/#!/download/TmaxOS/product" target="_self">
+							<img width="484" height="200" src="https://www.tmaxdata.com/upload/imgs/main/20190909155558_159.png" alt="티맥스OS HE 다운로드센터 오픈" >
+						</a>
+						</p>
+					</div>			
+				</li>
+			</ul>
+		</div>
+		<div class="main-list-wrap" style="padding-top: 20px;">
+			<ul class="main-list">
+				<li>
+					<!-- 1 -->
+					<div class="list cyan box-container">
+								
+						<p class="top img-container">
+						
+						<a href="http://www.tmaxdata.com/info/storyTView.do?seq=192" target="_self">
+						<img src="https://www.tmaxdata.com/upload/imgs/board/storyT/20200819184338_902.jpg" alt="">
+						
+						</a>
+						</p>
+						<div class="cont  ">
+							<a href="http://www.tmaxdata.com/info/storyTView.do?seq=192" target="_self"><h2 class="a-cont">[Focus] [인터뷰] "서부 개척시대 청바지 상인 돈 벌었다”  디지털 뉴딜 성공하려면 SW산업 키워야</h2></a>
+							
+							
+						</div>
+						<div class="type">
+							<span class="tit">
+							스토리T
+
+							</span>
+							<span class="date">
+							
+							2020.08.19
+							
+							</span>
+							<span>
+							<a href="http://www.tmaxdata.com/info/storyTView.do?seq=192" target="_self">
+							
+								<img src="https://www.tmaxdata.com/img/main/icon_new.gif" alt="new">
+							
+							</a>
+							</span>
+						</div>
+					</div>
+					<!-- 4 -->
+					<div class="list box-container orange">
+								
+						<p class="top img-container">
+						
+						<a href="http://www.tmaxdata.com/info/storyTView.do?seq=196" target="_self">
+						<img src="https://www.tmaxdata.com/upload/imgs/board/storyT/20201019101615_318.jpg" alt="">
+						
+						</a>
+						</p>
+						<div class="cont ">
+							<a href="http://www.tmaxdata.com/info/storyTView.do?seq=196" target="_self"><h2 class="a-cont">[Highlight] 티맥스데이터 티베로,  클라우드 기반 차세대 병원정보 시스템 도입사례 이어져</h2></a>
+							
+						</div>
+						<div class="type">
+							<span class="tit">
+							스토리T
+
+							</span>
+							<span class="date">
+							
+							2020.10.19
+							
+							</span>
+							<span>
+							<a href="http://www.tmaxdata.com/info/storyTView.do?seq=196" target="_self">
+							
+								<img src="https://www.tmaxdata.com/img/main/icon_new.gif" alt="new">
+							
+							</a>
+							</span>
+						</div>
+					</div>
+					<!-- gbg-->
+					<div class="list box-container orange">					
+						<!-- <p><a href="http://gbghp.tmax.co.kr/jsp/main.jsp" target="_blank"><img src="/img/main/global.gif" alt=""></a></p> -->
+						<p><a href="../www.tmaxsoft.com/index.html" target="_blank"><img  height="321" width="235" src="https://www.tmaxdata.com/img/main/global.png" alt=""></a></p>
+					</div>
+				</li>
+				<li>
+					<!-- 2 -->
+					<div class="list box-container cyan">
+						
+						<p class="top img-container">						
+						
+						<a href="http://www.tmaxdata.com/info/storyTView.do?seq=202" target="_self">
+						<img src="https://www.tmaxdata.com/upload/imgs/board/storyT/20201218163819_356.jpg" alt="">
+						
+						</a>
+						</p>						
+						<div class="cont ">
+							<a href="http://www.tmaxdata.com/info/storyTView.do?seq=202" target="_self"><h2 class="a-cont">[Tmax+] 하이퍼데이터,  코리아 빅데이터 어워드 솔루션 부문 수상</h2></a>
+							
+						</div>
+						<div class="type">
+							<span class="tit">
+							스토리T
+
+							</span>
+							<span class="date">
+							
+							2020.12.18
+							
+							</span>
+							<span>
+							<a href="http://www.tmaxdata.com/info/storyTView.do?seq=202" target="_self">
+							
+								<img src="https://www.tmaxdata.com/img/main/icon_new.gif" alt="new">
+							
+							</a>
+							</span>
+						</div>
+					</div>
+					<!-- 5 -->
+					<div class="list box-container cyan">
+						
+						<p class="top img-container">
+						
+						<a href="http://www.tmaxdata.com/info/storyTView.do?seq=158" target="_self">
+						<img src="https://www.tmaxdata.com/upload/imgs/board/storyT/20190621095150_754.jpg" alt="">
+						
+						</a>
+						</p>
+						<div class="cont ">
+							<a href="http://www.tmaxdata.com/info/storyTView.do?seq=158" target="_self"><h2 class="a-cont">[Highlight] 현대차그룹,  전체 IT시스템의 표준 DBMS에 ‘티베로’ 도입 확산</h2></a>
+							
+						</div>
+						<div class="type">
+							<span class="tit">
+							스토리T
+
+							</span>
+							<span class="date">
+							
+							2019.06.21
+							
+							</span>
+							<span>
+							<a href="http://www.tmaxdata.com/info/storyTView.do?seq=158" target="_self">
+							
+								<img src="https://www.tmaxdata.com/img/main/icon_new.gif" alt="new">
+							
+							</a>
+							</span>
+						</div>
+					</div>
+					<!-- tmax -->
+					<div class="list box-container orange">
+						<!-- <p><a href="http://tmaxhp.tmax.co.kr/main.do" target="_blank"><img src="/img/main/tmax.gif" alt=""></a></p> -->
+						<p><a href="http://kr.tmaxsoft.com/" target="_blank"><img height="321" width="235" src="https://www.tmaxdata.com/img/main/soft.png" alt=""></a></p>
+					</div>
+				</li>
+				<li>					
+					<!-- 3 -->
+					<div class="list box-container cyan">
+						
+						<p class="top img-container">
+						
+						<a href="http://www.tmaxdata.com/info/storyTView.do?seq=198" target="_self">
+						<img src="https://www.tmaxdata.com/upload/imgs/board/storyT/20201019103324_564.jpg" alt="">
+						
+						</a>
+						</p>
+						<div class="cont ">
+							<a href="http://www.tmaxdata.com/info/storyTView.do?seq=198" target="_self"><h2 class="a-cont">[Tmax+] 국방통합데이터센터-티맥스, D-Cloud 협약 체결</h2></a>
+							
+						</div>
+						<div class="type">
+							<span class="tit">
+							스토리T
+
+							</span>
+							<span class="date">
+							
+							2020.10.19
+							
+							</span>
+							<span>
+							<a href="http://www.tmaxdata.com/info/storyTView.do?seq=198" target="_self">
+							
+								<img src="https://www.tmaxdata.com/img/main/icon_new.gif" alt="new">
+							
+							</a>
+							</span>
+						</div>
+					</div>	
+					<!-- 6 -->
+					<div class="list box-container cyan">
+							
+						<p class="top img-container">
+						
+						<a href="http://www.tmaxdata.com/info/newsletterView.do?seq=112&amp;year=2021" target="_self">
+						<img src="https://www.tmaxdata.com/upload/imgs/board/newsletter/20210602141340_266.png" alt="">
+						
+						</a>
+						</p>
+						<div class="cont ">
+							<a href="http://www.tmaxdata.com/info/newsletterView.do?seq=112&amp;year=2021" target="_self"><h2 class="a-cont">2021년 5월 뉴스레터</h2></a>
+							
+						</div>
+						<div class="type">
+							<span class="tit">
+							뉴스레터
+
+							</span>
+							<span class="date">
+							
+							2021.05.27
+							
+							</span>
+							<span>
+							<a href="http://www.tmaxdata.com/info/newsletterView.do?seq=112&amp;year=2021" target="_self">
+							
+								<img src="https://www.tmaxdata.com/img/main/icon_new.gif" alt="new">
+							
+							</a>
+							</span>
+						</div>
+						
+					</div>				
+					<!-- technet -->
+					<div class="list box-container">
+						<a href="http://technet.tmaxsoft.com/" target="_blank">
+						<p><img width="235" height="216" src="https://www.tmaxdata.com/img/main/technet.png" alt=""></p>
+						<div class="cont">
+							<p>효율적인 시스템 관리를 위한</p>
+							<p>기술 전문 포탈, 테크넷서비스</p>
+							<p><img src="https://www.tmaxdata.com/img/main/go_technet.gif" alt=""></p>
+						</div>
+						</a>
+					</div>				
+				</li>
+				<li>
+					<!-- 채용 -->
+					<div class="list box-container green">
+						<p class="top"><a href="https://www.tmaxdata.com:443/recruit/recruitNotice.do"><img src="https://www.tmaxdata.com/img/main/recruit_img.gif" alt=""></a></p>
+						<div class="cont n-box">
+							
+							<h2 class="n-cont">진행중인 채용이 없습니다.</h2>
+						
+						</div>
+						<div class="type">
+							<span class="tit">채용공고</span>
+							<span class="date"></span>
+							<span><!--  <a href="http://www.tmaxdata.com/recruit/notice_view.do?no=TD-IRC-20130718-0005&seq=3"><img src="/img/main/icon_new.gif" alt="new"></a> --></span>
+						</div>
+					</div>
+					<!-- 교육 -->
+					<div class="list box-container yellow">
+						<p class="top"><a href="https://www.tmaxdata.com:443/service/educationList.do"><img src="https://www.tmaxdata.com/img/main/edu_img.gif" alt=""></a></p>
+						<div class="cont n-box">
+						
+							<a href="https://www.tmaxdata.com:443/service/educationList.do"><h2 class="n-cont">Tibero SQL Developers</h2></a>
+						
+							<a href="https://www.tmaxdata.com:443/service/educationList.do"><h2 class="n-cont">Tibero Architecture</h2></a>
+						
+							<a href="https://www.tmaxdata.com:443/service/educationList.do"><h2 class="n-cont">JEUS Performance Tunning</h2></a>
+						
+							<a href="https://www.tmaxdata.com:443/service/educationList.do"><h2 class="n-cont">ProSync Administration</h2></a>
+						
+							<a href="https://www.tmaxdata.com:443/service/educationList.do"><h2 class="n-cont">Tibero Performance Repository</h2></a>
+							
+						</div>
+						<div class="type">
+							<span class="tit">교육신청</span>
+							<span class="date"></span>
+							<span><!--  <a href="/popup/edu_course_detail.do?course_cd=TS-ATR1&course_seq=49" target="_blank"><img src="/img/main/icon_new.gif" alt="new"></a>--></span>
+						</div>
+					</div>
+					<!-- 콜센터 -->
+					<div class="list box-container ">
+						<p><a href="http://www.tmaxdata.com/bbs.do?cms_cd=SER_10"><img width="235" height="321" src="https://www.tmaxdata.com/img/main/call.png" alt=""></a></p>
+					</div>
+				</li>					
+
+			</ul>
+		</div>
+	</div>
+	<footer style="top:0px" id="footer">
+
+<div class="footer">
+	<div style="float: left; text-align: left; width: 675px;">
+		<!--<p><img src="/img/share/foot_address.gif" alt="성남시 분당구 서현동 272-6 티맥스빌딩"></p>-->
+		<!--<p style="padding-top: 10px;"><img src="/img/share/copyright.gif" alt="Copyright ⒞ 2013. Tmaxsoft, All Rights Reserved."></p>-->
+		<p style="font-size:16px; font-weight:bold;">(주)티맥스데이터</p>
+		<ul style="float:left; overflow:hidden; width: 500px;">
+			<li>대표이사 : 이희상 <span> | </span></li>
+			<li>&nbsp; 사업자등록번호 : 120-86-53289 <span> | </span></li>
+			<!-- <li>&nbsp; 경기도 성남시 분당구 정자일로 45 (금곡동 196번지) 티맥스 타워</li> -->
+		</ul>
+		<ul  style="float:left; width: 500px;">
+			<strong>- 본사:</strong> 경기도 성남시 분당구 황새울로258번길 29, 티맥스수내타워 6층 티맥스데이터
+		</ul>
+		<ul  style="float:left; width: 500px;">
+			<strong>- R&D센터:</strong> 경기도 성남시 분당구 정자일로 45, 티맥스타워
+		</ul> 
+		<ul style="float:left; width: 500px;">
+			<strong>- 기술지원센터:</strong> 경기도 성남시 분당구 황새울로258번길 31, 분당예미지빌딩 8층
+		</ul>
+		<ul style="float:left; width: 500px;">
+			<strong>- 교육센터:</strong> 경기도 성남시 분당구 황새울로258번길 29, 티맥스수내타워 2층
+		</ul>
+		<ul style="float:left;"> 
+			<li><strong>제품구입문의 : <a href="tel:031-8018-1111">031-8018-1111</a><span> | </span></strong></li>
+			<li><strong>&nbsp; 기술서비스센터 : <a href="tel:1544-8629">1544-8629</a><span> | </span></strong></li>
+			<li><strong>&nbsp; 대표번호 : <a href="tel:031-8018-1700"> 031-8018-1700 </a><span> | </span></strong></li>
+		</ul>
+		<div class="copy">
+			<p>본 사이트의 모든 콘텐츠는 저작권법의 보호를 받는 바, 무단 전재, 복사, 배포등을 금합니다. </p>
+			<p>Copyright ⒞ 2013. TmaxData, All Rights Reserved.</p>		
+		</div>
+	</div>
+<style type="text/css">
+.copy { clear:both; padding-top: 15px;} 
+</style>
+	<ul style="margin-top: 14px;width: 280px;">
+		<!--li>기술서비스센터 <a href="tel:1544-8629">1544-8629</a>(09:00~18:00) <span>|</span></li>
+		<li><a href="/service/inquiryWrite.do">고객문의 </a><span>|</span></li-->
+		<li><strong><a href="http://www.tmaxdata.com/company/ethicalManagement.do">윤리상담센터 </a><span>|</span></strong></li>
+		<li><strong><a style="color:#000" href="http://www.tmaxdata.com/bbs.do?cms_cd=ETC_901">개인정보처리방침 </a></strong><span style="margin-right: 5px;">|</span></li>
+		<li><a href="http://www.tmaxdata.com/bbs.do?cms_cd=ETC_91"> 회원약관</a></li>
+		
+		<!--<li><img src="/img/share/foot_call.gif" alt="콜센터 1544-8629(09:~18:00)"></li>
+		<li><a href="/service/inquiry.do"><img src="/img/share/foot_cs.gif" alt="고객문의"></a></li>
+		<li><a href="/etc/privicy.do"><img src="/img/share/foot_privicy.gif" alt="개인정보처리방침"></a></li>
+		<li><a href="/etc/agreement.do"><img src="/img/share/foot_agreement.gif" alt="회원약관"></a></li>-->
+		<!-- <li><a href="#"><img src="/img/share/foot_certi.gif" alt="인증센터"></a></li> -->
+	</ul>
+</div>
+<script>
+(function($) {
+	$(document).ready(function() {
+		var $tabB = $(".gnb");
+		var $tm = 0 -1 ; 
+		//console.log($tm);
+		$tabB.children('div.sub-cont').hide();
+		//$tabB.children('div.sub-cont').eq($tm).show();
+		$tabB.children('h2').eq($tm).addClass('selected');
+		$tabB.find("h2").each(function(idx){
+			var $ch = $('.menu-outer').children();
+			$(this).find("a").bind("click  focusin", function(event){
+				$(this).parent().addClass("selected").siblings("h2").removeClass("selected");
+				var $cur = $('.gnb .selected');
+				if( $('.sub-cont').is(':visible')) {
+					//$(this).parent().next(".sub-cont").show().siblings(".sub-cont").hide();
+					$(this).parent().next(".sub-cont").siblings(".sub-cont").hide();
+				} else {
+					//$ch.children().attr({src: "/img/menu/close.png"});
+					//$(this).parent().next(".sub-cont").show();
+				}
+				//event.preventDefault();
+			});
+				$ch.children().attr({src: "/img/menu/menu.png"});
+		});
+		$('.menu-outer').bind('click', function() {
+			var $cur = $('.gnb .selected');
+			var $ch = $(this).children();
+			// $('.hidden-list').slideToggle();
+			if( $('.sub-cont').is(':visible')) {
+				$ch.children().attr({src: "/img/menu/menu.png"});
+				$('.sub-cont').slideUp(300);
+				//$('.tab-menu').animate({'height': '0'}, 500);
+			} else { 
+				$ch.children().attr({src: "/img/menu/menu.png"});
+				$cur.next(".sub-cont").slideDown(300);
+				//$('.tab-menu').animate({'height': '139px'}, 500);
+			}
+			return false;	
+		});
+		
+		// $( 'img', $('.gnb h2') ).click( function() {
+		// 	$( 'img', $('.gnb h2') ).each( function() {
+		// 		$(this).attr('src', $(this).attr('src').replace('_on', ''));
+		// 	} );
+		// 	$(this).attr('src', $(this).attr('src').replace('.gif', '') + '_on.gif');
+
+		// } );
+		var goTopList = function() {
+			var $goTop = $('#goTop');
+			var $window = $(window);
+			var $document = $(document);
+			var $winHeight = $window.height();
+			var $scrollTop = $window.scrollTop();
+			var $endScroll = $document.height() - $window.height();
+			if ($scrollTop < 330 && $scrollTop >= 0) {
+				$goTop.css({ 'display': 'none' });
+			} else if ($scrollTop >= 300) {
+				$goTop.fadeIn('slow').css({ 'position': 'fixed', 'top': '40%', 'display': 'block' });
+			} else {
+				$goTop.css({ 'display': 'none' });
+				
+			}
+
+		}
+		goTopList();
+		$(window).scroll(goTopList);
+		$(window).resize(goTopList);
+
+
+		$('.top-list').bind('click', function() {
+			$('.hidden-list a').removeClass('act');
+			// $('.hidden-list').slideToggle();
+			if( $('.hidden-list').is(':visible')) {
+				$(this).children().attr({src: "/img/share/top_list.gif"});
+				$('.hidden-list').slideUp();
+			} else { 
+				$(this).children().attr({src: "/img/share/top_list_on.gif"});
+				$('.hidden-list').slideDown();
+			}
+			return false;	
+		});
+
+		// $('.hidden-list a').click(function() {
+		// 	$(this).removeClass('act').addClass('act');
+		// });
+
+		$( 'a', $('.hidden-list') ).click( function() {
+			$( 'a', $('.hidden-list') ).each( function() {
+				$(this).removeClass('act')
+			} );
+			$(this).addClass('act');
+
+		} );
+		var $tmnumber = 0 -1 ; 
+		$('.sf-menu .sf-mega').hide();
+		$('.sf-menu .sf-mega').eq($tmnumber).show();
+
+	});
+})(jQuery);
+</script>
+	</footer>
+<map name="map_database">
+	<area shape="rect" coords="410,70,473,95" href="http://www.tmaxdata.com/product/productView.do?prod_cd=tibero&amp;detail_gubun=prod_main" alt="database">
+	<!-- 
+	<area shape="rect" coords="76,120,177,150" href="/service/pdsTechnology.do?prod_cd=tibero" alt="기술문서">
+	<area shape="rect" coords="186,120,276,150" href="/service/pdsBrochure.do?prod_cd=tibero" alt="브로셔">
+	<area shape="rect" coords="283,120,373,150" href="/service/pdsMenual.do?prod_cd=tibero" alt="메뉴얼">
+	 -->
+</map>
+<map name="map_infinidata">
+	<area shape="rect" coords="300,71,364,100" href="http://www.tmaxdata.com/product/productView.do?prod_cd=infinidata&amp;detail_gubun=prod_main" alt="infinidata">
+	<!-- 
+	<area shape="rect" coords="76,120,177,150" href="/service/pdsTechnology.do?prod_cd=infinidata" alt="기술문서">
+	<area shape="rect" coords="186,120,276,150" href="/service/pdsBrochure.do?prod_cd=infinidata" alt="브로셔">
+	<area shape="rect" coords="283,120,373,150" href="/service/pdsMenual.do?prod_cd=infinidata" alt="메뉴얼">
+	-->
+</map>
+<map name="map_prosync">
+	<area shape="rect" coords="330,67,395,99" href="http://www.tmaxdata.com/product/productView.do?prod_cd=prosync&amp;detail_gubun=prod_main" alt="prosync">
+	<!-- 
+	<area shape="rect" coords="76,120,177,150" href="/service/pdsTechnology.do?prod_cd=prosync" alt="기술문서">
+	<area shape="rect" coords="186,120,276,150" href="/service/pdsBrochure.do?prod_cd=prosync" alt="브로셔">
+	<area shape="rect" coords="283,120,373,150" href="/service/pdsMenual.do?prod_cd=prosync" alt="메뉴얼">
+	-->
+</map>
+
+<form name="dataProductForm" id="dataProductForm" method="get">
+<input type="hidden" name="prod_cd" id="dpf_prod_cd" value="" />
+<input type="hidden" name="detail_gubun" id="dpf_detail_gubun" value="prod_main" />
+</form>	
+
+</body>
+
+<!-- Mirrored from www.tmaxdata.com/main.do by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 12:49:55 GMT -->
+</html>

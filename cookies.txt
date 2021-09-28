@@ -1,0 +1,30 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.tmax.co.kr	TRUE	/	FALSE	1999999999	XSRF-TOKEN	1632743523|l3eiklHh28vA
+www.tmax.co.kr	TRUE	/	FALSE	1999999999	SameSite	None
+kr.tmaxsoft.com	TRUE	/	FALSE	1999999999	__smVisitorID	M3lNN8mVPS7
+www.tmaxdata.com	TRUE	/	FALSE	1999999999	__smVisitorID	RTH3Zb7yFrN
+www.tmaxtibero.com	TRUE	/	FALSE	1999999999	__smVisitorID	mFDnxzGsjcY
+technet.tmaxsoft.com	TRUE	/	FALSE	1999999999	__smVisitorID	-5acnBj3Qr2
+technet.tmaxsoft.com	TRUE	/	FALSE	1999999999	JSESSIONID	BhSvblDeZQnKnsc1YQVvt5bPDNndU21MXECug5FYaDsA4rrUpgVqaYnJxRvOTP2j.dGVjaG5ldF9kb21haW4vdGVjaG5ldC0wMg==
+.youtube.com	TRUE	/	FALSE	1999999999	GPS	1
+.youtube.com	TRUE	/	FALSE	1999999999	YSC	cDy7jRNFWlw
+.youtube.com	TRUE	/	FALSE	1999999999	VISITOR_INFO1_LIVE	r0VEAQuTK3k
+www.youtube.com	TRUE	/	FALSE	1999999999	SameSite	none
+www.linkedin.com	TRUE	/	FALSE	1999999999	JSESSIONID	ajax:1382470436360795923
+.www.linkedin.com	TRUE	/	FALSE	1999999999	SameSite	None
+www.linkedin.com	TRUE	/	FALSE	1999999999	lang	v=2&lang=en-us
+.linkedin.com	TRUE	/	FALSE	1999999999	lidc	b=OGST02:s=O:r=O:a=O:p=O:g=2491:u=1:x=1:i=1632744031:t=1632830431:v=2:sig=AQG_SSmiFa0ROM028RCYoyPAAaf4498I"
+.ccdailynews.com	TRUE	/	FALSE	1999999999	PHPSESSID	b1bd57891f6b4c91a735f109ff4c6876
+kr.tmaxsoft.com	TRUE	/	FALSE	1999999999	JSESSIONID	iO2hUbBamhYawramKUOa2uLFRPt1z8yNXR0vLXa3Xvsg0c76pdeDw3rqxiW2TgzK.aG9tZXBhZ2VfZG9tYWluL3RtYXhocC0wMQ==
+www.tmaxdata.com	TRUE	/	FALSE	1999999999	JSESSIONID	GUsGWaCAI3Cl5p6PKiJtWSqXzNdL2Fs3XwXiGOGMmMSm8ylDpx1kXF4osPNza39o.aG9tZXBhZ2VfZG9tYWluL2RhdGFocC0wMQ==
+www.tmaxtibero.com	TRUE	/	FALSE	1999999999	JSESSIONID	GJbfzSTxfHaQ1AcuK9kpa9ILx41FicJaXZsE6giwMEOg5DCzpaxL3QFlR9jJ6IRV.aG9tZXBhZ2VfZG9tYWluL2hwdGliZXJvLTAy
+www.tmax.co.kr	TRUE	/	FALSE	1999999999	ssr-caching	cache#desc=hit#varnish=hit_etag#dc#desc=ae1
+blog.naver.com	TRUE	/	FALSE	1999999999	JSESSIONID	4E1A972165E5C63FB925382612FEEBD8.jvm1
+post.naver.com	TRUE	/	FALSE	1999999999	JSESSIONID	959F1E46DA12ADE7544F020318A2A630
+.tivine.co.kr	TRUE	/	FALSE	1999999999	ci_userlang	korean
+.tivine.co.kr	TRUE	/	FALSE	1999999999	ci_kisession	a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%22084e896639a7e9049d0ee99d216e7449%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A12%3A%2235.191.1.171%22%3Bs%3A10%3A%22user_agent%22%3Bb%3A0%3Bs%3A13%3A%22last_activity%22%3Bi%3A1632747059%3B%7D5893abab16620aa13adee03a14137c42
+.linkedin.com	TRUE	/	FALSE	1999999999	bcookie	v=2&7e1d577f-db5e-4650-8e09-5e48236f7a96"
+.www.linkedin.com	TRUE	/	FALSE	1999999999	bscookie	v=1&2021092712510595add9d2-65d0-46e4-8e5b-1d59bda6a1f1AQFCpA_vfLaSOsV6c7UrQHBEwwKltx3F"
+www.linkedin.com	TRUE	/	FALSE	1999999999	SameSite	None
+
